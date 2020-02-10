@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include "meta.njk" %}
+
+    <title>
+      {% block title %}
+        {{ website.title }}
+      {% endblock %}
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+
+    {% for stylesheet in stylesheets %}
+      <link rel="stylesheet" href="{{ stylesheet }}"/>
+    {% endfor %}
+    <link href="/{{ bundles.css }}" rel="stylesheet">
+    {% block head %}{% endblock %}
+
+    <script src="https://kit.fontawesome.com/c461c633dc.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="text-gray-800 antialiased">
+    {% include "navigation.njk" %}
+
+    <main>
+      {% block content %}
+        {{ content | safe }}
+      {% endblock %}
+
+    </main>
+
+    <a href="#" class="fixed bottom-0 z-10 border border-solid border-gray-200 right-0 bg-gray-800 m-4 p-4 hidden" id="goTopButton">
+      <i class="fas fa-fw fa-angle-up text-2xl text-gray-400"></i>
+    </a>
+
+    {% include "footer.njk" %}
+
+    {% for javascript in javascripts %}
+      <script type="text/javascript" src="{{ javascript }}"></script>
+    {% endfor %}
+    <script>
+      mybutton = document.getElementById("goTopButton");
+
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script>
+      function search() {
+        var input = document.getElementById('search');
+        var filter = input
+          .value
+          .toLowerCase();
+
+        var definitions = document.querySelectorAll('.definition');
+        for (i = 0; i < definitions.length; i++) {
+          var term = definitions[i]
+            .getElementsByTagName("h6")[0]
+            .innerText
+            .toLowerCase();
+
+          if (term.indexOf(filter) > -1) {
+            definitions[i].style.display = "";
+          } else {
+            definitions[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

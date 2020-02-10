@@ -1,0 +1,53 @@
+title: Leksykon Programisty
+
+meta:
+  description: Leksykon Programisty - żargon programistyczny w przystępnej formie, od A do Z
+  facebook:
+    site_name: Leksykon Programisty
+    locale: pl_PL
+    url: https://leksykonprogramisty.pl
+  twitter:
+    site: Leksykon Programisty
+    creator: Jakub Neander
+    domain: leksykonprogramisty.pl
+
+definitions:
+  - term: API
+    description: API oznacza programistyczny interfejs aplikacji.
+  - term: Backend
+    description: Niewidoczne zaplecze techniczne aplikacji, które jest niezbędne do jej funkcjonowania.
+  - term: Code Review
+    description: >
+      Proces sprawdzania kodu przez innych programistów poprzez zgłaszanie uwag w postaci komentarzy.
+  - term: CSS
+    description:
+  - term: Emulator
+    description: >
+      Program naśladujący działanie rzeczywistego urządzenia, e.g. telefonu
+  - term: Frontend
+    description:
+  - term: Framework
+    description: >
+      Zbiór zasad, mechanizmów i narzędzi, które pozwalają szybko stworzyć szkielet aplikacji.
+  - term: HTML
+    description: >
+      Język znaczników do tworzenia dokumentów webowych pozwalający na opisanie struktury danej strony.
+  - term: IDE
+    description: >
+      Zintegrowane środowisko programistyczne, czyli aplikacja typu edytor tekstowy umożliwiająca tworzenia oprogramowania.
+  - term: JavaScript
+    description: >
+      Skryptowy język programowania stworzony przez Brendana Eich w firmie Netscape; stosowany na stronach internetowych.
+  - term: Linter
+    description: >
+      Narzędzie sprawdzające kod aplikacji pod kątem spełnienia ustalonych standardów jakości.
+  - term: PHP
+    description: >
+      Skryptowy język programowania do budowania stron internetowych wykorzystywany na backendzie.
+  - term: SDK
+    description: >
+      Zestaw narzędzi programistyczny pozwalających na tworzenie aplikacji pod konkretną platformę.
+  - term: SQL
+    description: Strukturalny język zapytań danych do pobieranie i modyfikowanie baz danych.
+  - term: Spam
+    description: Anonimowe, masowo rozsyłane wiadomości e-mail.

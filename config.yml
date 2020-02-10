@@ -1,0 +1,7 @@
+includePaths: []
+stylesheets: []
+javascripts: []
+deploy:
+  server:
+  path:
+base_url: http://change-me-in-config-yml.com
