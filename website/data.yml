@@ -20,7 +20,7 @@ definitions:
     description: >
       Proces sprawdzania kodu przez innych programistów poprzez zgłaszanie uwag w postaci komentarzy.
   - term: CSS
-    description:
+    description: Kaskadowy Arkusz Stylów odpowiedzialny za definicję warstwy wizualnej strony internetowej.
   - term: Emulator
     description: >
       Program naśladujący działanie rzeczywistego urządzenia, e.g. telefonu
