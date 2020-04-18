@@ -25,7 +25,7 @@ definitions:
     description: >
       Program naśladujący działanie rzeczywistego urządzenia, e.g. telefonu
   - term: Frontend
-    description:
+    description: Wygląd i zachowanie strony, czyli to co widzi użytkownik po wejściu na stronę internetową.
   - term: Framework
     description: >
       Zbiór zasad, mechanizmów i narzędzi, które pozwalają szybko stworzyć szkielet aplikacji.
